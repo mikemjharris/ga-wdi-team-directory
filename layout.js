@@ -39,9 +39,7 @@ $('li').hover(function() {
 $('li').on("click" , function() {   
     var startAngle = Math.PI - $('#highlighted').data("angle") * (Math.PI / 6)
     var endAngle =  Math.PI - $(this).data('angle') * (Math.PI / 6)
-    console.log(startAngle)
-    console.log(endAngle)
-
+    
     if((startAngle - endAngle) > Math.PI ) {
       startAngle = startAngle - 2 * Math.PI
     } 
@@ -51,7 +49,6 @@ $('li').on("click" , function() {
 
     }
 
-    console.log(startAngle)
     var fps = 60
     var time_round = 0.5
     var nos_times = time_round * fps
@@ -66,8 +63,23 @@ $('li').on("click" , function() {
   
 });
 
-drawCircle(Math.PI)
 
+$(document).ready(function() {
+      // var mq = window.matchMedia("(min-width: 950px)");
+      $('li').addClass('withjs_li')
+      $('ul').addClass('withjs_ul')
+      // if (mq.matches) {
+      //   $('li').css("position", "absolute")
+      //   $('li').css("width", "100px")
+      //   $('li').css("height", "100px")
+      //   $('li').css("line-height", "90px")
+      //   $('li').css("border-radius", "100%")
+
+      //   $('ul').css("margin", "300px auto")
+      // }
+
+      drawCircle(Math.PI);
+}())
 
  
 
