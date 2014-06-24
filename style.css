@@ -17,7 +17,7 @@ ul {
   margin: 0px auto;
   margin: 1px solid black;
   width: 95%;
-  
+
 }
 
 #details {
@@ -179,6 +179,12 @@ h5 {
   border: 1px solid #ECECEC;
 }
 
+.projects span {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background: #ECECEC; 
+}
 .projects div {
   clear: both;
 }
