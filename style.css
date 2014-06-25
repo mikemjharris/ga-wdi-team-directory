@@ -93,6 +93,11 @@ h4 {
   border-bottom: 2px solid #222222; 
 }
 
+li>a {
+  text-decoration: none;
+  color: black;
+}
+
 .withjs_li:hover {
     width: 100px;
     height: 100px;
