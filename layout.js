@@ -37,8 +37,10 @@ $('li').hover(function() {
 
 
 $('li').on("click" , function() {   
-    var startAngle = Math.PI - $('#highlighted').data("angle") * (Math.PI / 6)
-    var endAngle =  Math.PI - $(this).data('angle') * (Math.PI / 6)
+    var position_start = $('#highlighted').index() -1
+    var position_end = $(this).index() -1
+    var startAngle = Math.PI - position_start * (Math.PI / 6)
+    var endAngle =  Math.PI - position_end * (Math.PI / 6)
     
     if((startAngle - endAngle) > Math.PI ) {
       startAngle = startAngle - 2 * Math.PI
